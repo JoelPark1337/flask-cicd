@@ -1,1 +1,1 @@
-python3 /home/ubuntu/app/app.py
+python3 /home/ubuntu/app/app.py &
