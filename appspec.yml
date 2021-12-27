@@ -10,6 +10,10 @@ permissions:
     group: ubuntu
     mode: 755
 hooks:
+  BeforeInstall:
+    - location: scripts/stop_application.sh
+      timeout: 60
+      runas: ubuntu
   AfterInstall:
     - location: scripts/deploy.sh
       timeout: 60
