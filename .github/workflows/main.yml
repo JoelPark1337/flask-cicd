@@ -28,7 +28,7 @@ jobs:
       - run: pip install -r ./app/requirements.txt
       
       - name: Run Python
-        run: python3 ./app/app.py
+        run: python3 ./app/test.py
       
           # 폴더 만드는 스탭
       - name: make artifacts dir
