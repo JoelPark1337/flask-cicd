@@ -36,7 +36,7 @@ jobs:
 
       # 소스 파일 압축
       - name: zip artifacts
-        run: zip -r ./artifacts/build.zip ./app/* appspec.yml
+        run: zip -r ./artifacts/build.zip ./app/* ./scripts/* appspec.yml
     
       - name: S3 Deploy
         run: aws s3 sync ./artifacts s3://flask-backend/backend/ --acl bucket-owner-full-control
