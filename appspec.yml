@@ -5,21 +5,12 @@ files:
   - source: /
     destination: /home/ubuntu/
 permissions:
-  - object: /home/ubuntu/app
+  - object: /home/ubuntu
     owner: ubuntu
     group: ubuntu
     pattern: "**"
     mode: 755
-    type:
-      - file
-permissions:
-  - object: /home/ubuntu/scripts
-    owner: ubuntu
-    group: ubuntu
-    pattern: "**"
-    mode: 755
-    type:
-      - file
+
 hooks:
   BeforeInstall:
     - location: scripts/stop_application.sh
@@ -28,4 +19,4 @@ hooks:
   AfterInstall:
     - location: scripts/deploy.sh
       timeout: 60
-      runas: root
+      runas: ubuntu
