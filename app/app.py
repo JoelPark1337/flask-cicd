@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=["GET"])
 def index():
-    return "Application Test"
+    return "Deploy!!"
 
 
 if __name__=="__main__":

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PID=$(ps -ef | grep "/app/app.py" | grep -v grep | awk '{ print $2 }' | xargs echo )
+PID=$(ps -ef | grep "app.py" | grep -v grep | awk '{ print $2 }' | xargs echo )
 
 echo "Killing PID: '$PID'"
 sudo kill $PID
