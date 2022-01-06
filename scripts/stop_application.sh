@@ -8,6 +8,6 @@ sudo kill $PID
 sleep 2
 echo "Server stopped."
 
-sudo rm -rf /home/ubuntu/app/*
-sudo rm -rf /home/ubuntu/scripts/*
+sudo rm -rf /home/ubuntu/*
+
 exit 0
