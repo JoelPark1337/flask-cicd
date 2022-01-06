@@ -11,7 +11,7 @@ class UnitTest(unittest.TestCase):
     def test_answer(self):
         response = self.app.get('/')
         data = response.data
-        self.assertEqual(b"Deploy!!", data)
+        self.assertEqual(b"Deploy123!!", data)
 
 if __name__ == '__main__':
     unittest.main()
