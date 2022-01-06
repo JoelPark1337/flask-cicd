@@ -8,7 +8,7 @@ permissions:
   - object: /home/ubuntu/app
     owner: ubuntu
     group: ubuntu
-    pattern: "*"
+    pattern: "**"
     mode: 755
     type:
       - file
