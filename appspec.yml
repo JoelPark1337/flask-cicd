@@ -8,12 +8,18 @@ permissions:
   - object: /home/ubuntu/app
     owner: ubuntu
     group: ubuntu
+    pattern: "*"
     mode: 755
+    type:
+      - file
 permissions:
   - object: /home/ubuntu/scripts
     owner: ubuntu
     group: ubuntu
+    pattern: "*"
     mode: 755
+    type:
+      - file
 hooks:
   BeforeInstall:
     - location: scripts/stop_application.sh
