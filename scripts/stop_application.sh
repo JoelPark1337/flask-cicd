@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo rm -rf /home/ubuntu/app/requirements.txt
 
 PID=$(ps -ef | grep "/app/app.py" | grep -v grep | awk '{ print $2 }' | xargs echo )
 
